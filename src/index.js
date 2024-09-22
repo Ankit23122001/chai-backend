@@ -2,6 +2,7 @@ import dotenv from "dotenv";
 
 //IMPORT OF DB CONNECTION WRITTEN IN DB FOLDER 
 import connectDB from "./db/index.js";
+import { app } from "./app.js";
 
 dotenv.config({
     path : './env'
