@@ -1,4 +1,4 @@
-import mongoose,  {Schema, Types} from "mongoose";
+import mongoose,  {Schema} from "mongoose";
 
 const subscriptionSchema = new Schema ({
     subscriber:{
@@ -6,7 +6,7 @@ const subscriptionSchema = new Schema ({
         ref : "User"
     },
     channel: {
-        type: mongoose.Schema.Types.ObjectId,  
+        type: mongoose.Schema.Types.ObjectId,    // ONE TO WHOM SUBSCRIBER IS SUBCRIBING
         ref : "User"
     }
 } , {timestamps: true}
